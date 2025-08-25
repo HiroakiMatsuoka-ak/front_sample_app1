@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ユーザー一覧</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <div class="list-container">
+        <h1>ユーザー一覧</h1>
+        <table class="user-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>名前</th>
+                    <th>メールアドレス</th>
+                </tr>
+            </thead>
+            <tbody id="userList">
+                <!-- ダミーデータがここに表示されます -->
+            </tbody>
+        </table>
+    </div>
+    <script>
+        // ダミーユーザーデータ
+        const users = [
+            { id: 1, name: "山田太郎", email: "taro.yamada@example.com" },
+            { id: 2, name: "佐藤花子", email: "hanako.sato@example.com" },
+            { id: 3, name: "鈴木一郎", email: "ichiro.suzuki@example.com" },
+            { id: 4, name: "高橋美咲", email: "misaki.takahashi@example.com" },
+            { id: 5, name: "田中健", email: "ken.tanaka@example.com" },
+            { id: 6, name: "中村優子", email: "yuko.nakamura@example.com" },
+            { id: 7, name: "小林誠", email: "makoto.kobayashi@example.com" },
+            { id: 8, name: "加藤浩", email: "hiroshi.kato@example.com" },
+            { id: 9, name: "斎藤智子", email: "tomoko.saito@example.com" },
+            { id: 10, name: "渡辺直樹", email: "naoki.watanabe@example.com" }
+        ];
+        // ユーザー一覧をテーブルに表示
+        const userList = document.getElementById('userList');
+        users.forEach(user => {
+            const row = document.createElement('tr');
+            row.innerHTML = `<td>${user.id}</td><td>${user.name}</td><td>${user.email}</td>`;
+            userList.appendChild(row);
+        });
+    </script>
+</body>
+</html>
