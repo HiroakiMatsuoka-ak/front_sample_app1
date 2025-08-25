@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ダッシュボード</title>
+    <link rel="stylesheet" href="sample.css">
+</head>
+<body>
+    <div class="dashboard-container enhanced-dashboard">
+        <h1>ダッシュボード</h1>
+        <p class="dashboard-welcome">ようこそ、ダッシュボード画面です。</p>
+        <div class="dashboard-actions">
+            <a href="sample.html" class="dashboard-btn">ユーザー登録画面へ</a>
+        </div>
+    </div>
+    <style>
+        .enhanced-dashboard {
+            max-width: 480px;
+            margin: 60px auto;
+            background: linear-gradient(135deg, #e3f0ff 0%, #f9f9f9 100%);
+            border-radius: 18px;
+            box-shadow: 0 6px 24px rgba(0,0,0,0.10);
+            padding: 40px 32px;
+            text-align: center;
+        }
+        .enhanced-dashboard h1 {
+            color: #0078d4;
+            font-size: 2.2rem;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+        }
+        .dashboard-welcome {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 32px;
+        }
+        .dashboard-actions {
+            margin-top: 16px;
+        }
+        .dashboard-btn {
+            display: inline-block;
+            background: linear-gradient(90deg, #0078d4 60%, #00c6fb 100%);
+            color: #fff;
+            font-weight: bold;
+            padding: 14px 36px;
+            border-radius: 8px;
+            font-size: 1.1rem;
+            text-decoration: none;
+            box-shadow: 0 2px 12px rgba(0,120,212,0.10);
+            transition: background 0.2s, transform 0.2s;
+        }
+        .dashboard-btn:hover {
+            background: linear-gradient(90deg, #005fa3 60%, #009ec3 100%);
+            transform: translateY(-2px) scale(1.04);
+        }
+    </style>
+</body>
+</html>
